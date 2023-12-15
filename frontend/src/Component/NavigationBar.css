@@ -1,0 +1,22 @@
+#navbar{
+    background-color: rgb(108, 238, 108);
+    position: relative;
+}
+#home:hover{
+    text-decoration: underline;
+    text-emphasis-color: #ffffff;
+}
+#news:hover{
+    text-decoration: underline;
+}
+.sport:hover{
+    text-decoration: underline;
+}
+#logoImg{
+    width: 120px;
+    height: 80px;
+    font-weight: bolder;
+}
+#me-auto{
+    justify-content: space-between;
+}
