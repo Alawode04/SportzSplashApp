@@ -101,7 +101,7 @@ function NavigationBar() {
           <Nav className="me-auto" id="me-auto">
             <Nav.Link href="/home" id="/home">Home</Nav.Link>
             <Nav.Link href="/news" id="/news">News</Nav.Link>
-            <Nav.Link href="/news" id="/news">Sport</Nav.Link>
+            <Nav.Link href="/sport" id="/news">Sport</Nav.Link>
            
           </Nav>
         </Navbar.Collapse>
