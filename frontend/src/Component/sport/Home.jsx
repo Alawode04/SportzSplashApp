@@ -98,6 +98,20 @@ const Home = () => {
 
   };
 
+  const renderSportCards = (sportsData) => {
+    return sportsData.map((sport, index) => (
+      <Card key={index} style={{ width: '15rem' }}>
+        <Card.Img variant="top" src={sport.image} />
+        <Card.Body>
+          <Card.Title>Headline</Card.Title>
+          <Card.Text>{sport.headline}</Card.Text>
+          <Button variant="success" onClick={() => handleSportz(sport.headline)}>Read More..</Button>
+        </Card.Body>
+      </Card>
+    ));
+  };
+  
+
   return (
     <>
     <div className="sport" style={{display: "grid", 
@@ -107,11 +121,12 @@ const Home = () => {
     height: "2rem",
     margin: "20px 20px 20px",
     marginBottom: "30px",
-    textDecoration: "none"}}>
+    textDecoration: "none"}}> 
+    
+     
+     {renderSportCards([sportPic, sportPics, sportPicture, sportNews, soccer, soccers, mySportPic, sportz, skyNews, ourNews, sporty, sportee])}
+    
 
-
-         
-         
 
           <Card style={{ width: '15rem', }}>
         <Card.Img variant="top" src={sportPic.image} />
