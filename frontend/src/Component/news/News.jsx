@@ -41,6 +41,20 @@ const News = () => {
       headline: "Friday marked precisely 18 months since Vincent Kompany was appointed Burnley boss. It has been quite the year-and-a-half for the Belgian at Turf Moor."
     }
   )
+
+  const [moreStories4, setMoreStories4] = useState(
+    {
+      image: "https://e0.365dm.com/23/12/2048x1152/skysports-joao-pedro-brighton_6393385.jpg?20231214220728", 
+      headline: "Brighton 1-0 Marseille: Joao Pedro fires late winner as Seagulls clinch Europa League last-16 spot"
+    }
+  )
+
+  const [moreStories5, setMoreStories5] = useState(
+    {
+      image: "https://e0.365dm.com/23/12/2048x1152/skysports-edson-alvarez-west-ham_6393363.jpg?20231214212535",
+      headline: "West Ham 2-0 Freiburg: Hammers secure Group A top spot and place in Europa League last 16"
+    }
+  )
   return (
     <>
     <div className='text'style={{textAlign: "center"}}>
@@ -52,7 +66,7 @@ const News = () => {
     <h5 style={{paddingLeft: "40px", marginTop:"20px"}}>{ourNews.newsSubHeadline}</h5>
 
 
-    <hr />
+    <hr className="featurette-divider"/>
     <div style={{marginLeft: "10px", marginTop: "10px"}}>
       <h3>Read Next</h3>
     </div>
@@ -99,6 +113,7 @@ const News = () => {
           <Button variant="">Read Now</Button>
         </Card.Body>
       </Card>
+
       <Card style={{ width: '30rem' }}>
         <Card.Img variant="top" src={moreStories3.image} />
         <Card.Body>
@@ -109,6 +124,31 @@ const News = () => {
           <Button variant="">Read Now</Button>
         </Card.Body>
       </Card>
+
+      <Card style={{ width: '30rem' }}>
+        <Card.Img variant="top" src={moreStories4.image} />
+        <Card.Body>
+          <Card.Title>Headline</Card.Title>
+          <Card.Text>
+            {moreStories4.headline}
+          </Card.Text>
+          <Button variant="">Read Now</Button>
+        </Card.Body>
+      </Card>
+
+      <Card style={{ width: '30rem' }}>
+        <Card.Img variant="top" src={moreStories5.image} />
+        <Card.Body>
+          <Card.Title>Headline</Card.Title>
+          <Card.Text>
+            {moreStories5.headline}
+          </Card.Text>
+          <Button variant="">Read Now</Button>
+        </Card.Body>
+      </Card>
+
+
+      <Button variant="success" style={{width: "100px", display: "block", margin: " auto"}}>View More Content</Button>
 
       </div>
     </>

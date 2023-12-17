@@ -98,18 +98,18 @@ const Home = () => {
 
   };
 
-  const renderSportCards = (sportsData) => {
-    return sportsData.map((sport, index) => (
-      <Card key={index} style={{ width: '15rem' }}>
-        <Card.Img variant="top" src={sport.image} />
-        <Card.Body>
-          <Card.Title>Headline</Card.Title>
-          <Card.Text>{sport.headline}</Card.Text>
-          <Button variant="success" onClick={() => handleSportz(sport.headline)}>Read More..</Button>
-        </Card.Body>
-      </Card>
-    ));
-  };
+  // const renderSportCards = (sportsData) => {
+  //   return sportsData.map((sport, index) => (
+  //     <Card key={index} style={{ width: '15rem' }}>
+  //       <Card.Img variant="top" src={sport.image} />
+  //       <Card.Body>
+  //         <Card.Title>Headline</Card.Title>
+  //         <Card.Text>{sport.headline}</Card.Text>
+  //         <Button variant="success" onClick={() => handleSportz(sport.headline)}>Read More..</Button>
+  //       </Card.Body>
+  //     </Card>
+  //   ));
+  // };
   
 
   return (
@@ -124,7 +124,7 @@ const Home = () => {
     textDecoration: "none"}}> 
     
      
-     {renderSportCards([sportPic, sportPics, sportPicture, sportNews, soccer, soccers, mySportPic, sportz, skyNews, ourNews, sporty, sportee])}
+     {/* {renderSportCards([sportPic, sportPics, sportPicture, sportNews, soccer, soccers, mySportPic, sportz, skyNews, ourNews, sporty, sportee])} */}
     
 
 
