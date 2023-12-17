@@ -4,6 +4,7 @@ import NavigationBar from './Component/navbar/NavigationBar'
 import Home from './Component/sport/Home'
 import News from './Component/news/News'
 import Footer from './Component/footer/Footer'
+import HighLights from './Component/highlight/HighLights'
 
 function App() {
  
@@ -11,12 +12,14 @@ function App() {
     <>
        
       <NavigationBar />
-      <Footer />
-     
+    
       <Routes>
         <Route path='/home' element={<Home />} />
         <Route path='/news' element={<News />} />
+        <Route path='/highlights' element={<HighLights />} />
       </Routes>
+
+      <Footer />
     </>
   )
 }
