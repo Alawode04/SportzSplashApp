@@ -1,11 +1,13 @@
-import React from 'react'
-import HighLights from './HighLights';
+import React, { useState } from 'react'
+import '../Highlights.css'
+// import NewsCard from '../NewsCard'
 
 
 const HighLight = () => {
+
   return (
     <div className="sportVideo" style={{display: "grid", 
-    gridTemplateColumns: "1fr ", 
+    gridTemplateColumns: "1fr 1fr ", 
     gridTemplateRows: "1fr 1fr",
     gap: "70px",
     marginTop: "30px", 
@@ -13,38 +15,44 @@ const HighLight = () => {
     marginBottom: "40px",
     }}>
         
-        <iframe width="560" 
+        <iframe width="500" 
         height="315" 
         src="https://www.youtube.com/embed/77PUi13DI3s?si=gUyNsC3AdmYOZsso" 
         title="YouTube video player" 
         frameborder="0"
         allowfullscreen></iframe>
 
-        <iframe width="560" 
+        <iframe width="500" 
         height="315" 
         src="https://www.youtube.com/embed/6WjWo5ZFkfM?si=rQKRhb2aw3IZbYPf" 
         title="YouTube video player" 
         frameborder="0" 
         allowfullscreen></iframe>
 
-        <iframe width="560" 
+        <iframe width="500" 
         height="315" 
         src="https://www.youtube.com/embed/TL0I5jRtneQ?si=dUD30dw8Xtw12Lhb" 
         title="YouTube video player" 
         frameborder="0"  
         allowfullscreen></iframe>
 
+      <iframe width="500" 
+      height="315" 
+      src="https://www.youtube.com/embed/JU013ovCvmI?si=HA_M5n2qftRKXXNI" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allowFullscreen></iframe>
 
-        <h5><button style={{backgroundColor: "rgb(108, 238, 108)", 
-        color: "white", 
-        border: "3px solid white", 
-        borderRadius: "8px", 
-        fontSize: "15px"}}>
-          Click here</button> 
-          to watch more highlights</h5>
+      <div className='click'>
+      
+              Click here
+             to watch more highlights
+        {/* <NewsCard /> */}
+      </div> 
     </div>
   )
-}
+  }
 
 
-export default HighLight
+
+export default HighLight; 
