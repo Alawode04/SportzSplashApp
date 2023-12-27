@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
  
 
-const apiKey = 'https://newsapi.org/v2/top-headlines?country=gb&category=sports&apiKey=376e94c327b9444197944d299c541e91';
-const apiUrl = "";
+const apiKey = '376e94c327b9444197944d299c541e91';
+const apiUrl = 'https://newsapi.org/v2/top-headlines?country=gb&category=sports&apiKey=';
+
 
 const News = () => {
   const [sportsNews, setSportsNews] = useState([]);
@@ -12,6 +13,7 @@ const News = () => {
     const fetchSportsNews = async () => {
       try {
         const response = await axios.get(apiUrl); 
+        console.log(response.data.articles)
         setSportsNews(response.data.articles);
       } catch (error) {
         console.error('Error fetching sports news:', error);
